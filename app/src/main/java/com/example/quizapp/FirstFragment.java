@@ -51,6 +51,7 @@ public class FirstFragment extends Fragment {
         this.questionModelArrayList = new ArrayList<>();
         this.setupQuestions();
         this.setData();
+        this.answerText.requestFocus();
 
         view.findViewById(R.id.Submit).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,6 +114,7 @@ public class FirstFragment extends Fragment {
                         }
                     })
                     .show();
+           this.answerText.requestFocus();
            // Log.e("Answer","Right");
         }else{
             this.playFailedSound();
@@ -127,6 +129,7 @@ public class FirstFragment extends Fragment {
                         }
                     })
                     .show();
+            this.answerText.requestFocus();
            // Log.e("Answer","Wrong");
         }
         this.currentPosition++;

@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             new SweetAlertDialog(this, SweetAlertDialog.NORMAL_TYPE)
                     .setTitleText("About Us")
-                    .setContentText("Math Table Quiz App \n Version 1.0 \n \n (c) 2021 Mickle Entity Ltd. \n\n Write us a feedback to \n mickle.entity.ltd@gmail.com")
+                    .setContentText("Math Table Quiz App \n Version 1.0 \n \n (c) 2021 Mickle Entity Ltd. \n\n Write us a feedback to \n mickle.entity.ltd@gmail.com \n\n")
                     .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
                         @Override
                         public void onClick(SweetAlertDialog sweetAlertDialog) {
