@@ -3,8 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.quizapp.MainActivity">
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:id="@+id/app_bar_switch"
+        android:checkable="true"
+        android:checked="true"
+        android:enabled="true"
+        android:title="@string/play_sound" />
+    <item
+        android:onClick="showAbout"
+        android:title="@string/item" />
 </menu>

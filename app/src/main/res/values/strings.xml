@@ -15,4 +15,7 @@
     <string name="write_your_answer">Write your answer</string>
     <string name="question_no">Question No:</string>
     <string name="score">Score</string>
+    <string name="about">About</string>
+    <string name="play_sound">Play sound</string>
+    <string name="item">About</string>
 </resources>

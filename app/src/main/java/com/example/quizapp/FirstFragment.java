@@ -63,35 +63,39 @@ public class FirstFragment extends Fragment {
     }
 
     public void playHappySound(){
-        mp = MediaPlayer.create(this.getContext(), R.raw.happy);
-        mp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mp) {
-                mp.start();
-            }
-        });
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-            }
-        });
+        if(module.isPlaySound) {
+            mp = MediaPlayer.create(this.getContext(), R.raw.happy);
+            mp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                @Override
+                public void onPrepared(MediaPlayer mp) {
+                    mp.start();
+                }
+            });
+            mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mp.release();
+                }
+            });
+        }
     }
 
     public void playFailedSound(){
-        mp = MediaPlayer.create(this.getContext(), R.raw.failed);
-        mp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mp) {
-                mp.start();
-            }
-        });
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-            }
-        });
+        if(module.isPlaySound) {
+            mp = MediaPlayer.create(this.getContext(), R.raw.failed);
+            mp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                @Override
+                public void onPrepared(MediaPlayer mp) {
+                    mp.start();
+                }
+            });
+            mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    mp.release();
+                }
+            });
+        }
     }
 
     public void checkAnswer(){
@@ -114,7 +118,7 @@ public class FirstFragment extends Fragment {
             this.playFailedSound();
             new SweetAlertDialog( this.getContext(), SweetAlertDialog.ERROR_TYPE)
                     .setTitleText("Wrong Answer!")
-                    .setContentText("The right answer is: " + questionModelArrayList.get(currentPosition).getAnswer())
+                    .setContentText("The right answer is: \n" + questionModelArrayList.get(currentPosition).getAnswer())
                     .setConfirmText("OK")
                     .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
                         @Override
