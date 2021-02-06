@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Math Table Quiz App</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="QuestionText">1 + 2 = ?</string>
+    <string name="SubmitText">Submit</string>
+    <string name="NewQuestion">New Question</string>
+    <string name="write_your_answer">Write your answer</string>
+    <string name="question_no">Question No:</string>
+    <string name="score">Score</string>
+</resources>
