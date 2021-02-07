@@ -154,7 +154,7 @@ public class FirstFragment extends Fragment {
     public void generateMathTables(){
         for (int i = 2; i <13 ; i++) {
             for (int x = 1; x <13 ; x++) {
-                this.questionModelArrayList.add(new QuestionModel("What is " + i + "x" + x + " ?","" + (i*x)));
+                this.questionModelArrayList.add(new QuestionModel("" + i + "x" + x + " = ?","" + (i*x)));
             }
         }
     }
